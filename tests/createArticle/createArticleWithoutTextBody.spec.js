@@ -29,7 +29,7 @@ test.beforeEach(async ({page}) => {
     await homePage.assertYourFeedTabIsVisible();
 });
 
-test(`Create an article without description`, async() => {
+test(`Create an article without body`, async() => {
     await homePage.clickNewArticleLink();
     await createArticlePage.checkCreateArticleButtonIsHere();
     await createArticlePage.fillTitleField('Test Title');

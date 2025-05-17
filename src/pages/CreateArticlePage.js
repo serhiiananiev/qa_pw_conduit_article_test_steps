@@ -16,9 +16,9 @@ export class CreateArticlePage {
   async clickPublishArticleButton() {
     await test.step(`Click the 'Publish Article' button`, async () => {
       
-        await this.publishArticleButton.click();
+        await this.publishArticleButton.click()
   });
-    };
+    }
   
 
   async assertErrorMessageContainsText(messageText) {
